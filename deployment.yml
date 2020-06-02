@@ -23,8 +23,8 @@ spec:
         command: ["/bin/sh", "-c"]
         args:
          - echo "start";
-           git clone https://github.com/pallavimitra/imdb_keras;
-           cd ;
+           git clone https://github.com/pallavimitra/inverse-matrix-kubernetes;
+           cd inverse-matrix-kubernetes-master;
            pip install -r requirements.txt;
            python main.py;
         ports:
