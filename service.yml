@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: predict-imdb-service
+  name: inverse-matrix-service
   labels:
-    app: imdb-server
+    app: inverse-matrix
 spec:
   ports:
     - port: 8080
   selector:
-    app: imdb-server
+    app: inverse-matrix
   type: LoadBalancer
