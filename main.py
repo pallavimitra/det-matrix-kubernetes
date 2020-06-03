@@ -6,8 +6,8 @@ app = Flask(__name__)
 def invmat():
     n = 100
     m = np.random.rand(n, n)
-    inv_m =  np.linalg.inv(m)
-    return inv_m
+    inv_m =  np.linalg.det(m)
+    return jsonify({'result': inv_m})
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
