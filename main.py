@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/det', methods=['POST'])
 def detmat():
-    n = 1000
+    n = 100
     m = np.random.rand(n, n)
     det_m =  np.linalg.det(m)
     return jsonify({'result': det_m})
